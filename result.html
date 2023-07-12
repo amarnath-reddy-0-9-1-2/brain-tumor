@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel= "stylesheet" type= "text/css" href="static/styles/result.css">
+</head>
+
+<body class="container">
+<div class="Box">
+<h3 class="heading">RESULT</h3>
+    <div class="answers">
+{% for message in messages %}
+    <h3 class="answer">{{message}}</h3>
+{% endfor %}
+    </div>
+<br>
+    <div class="images">
+<img src="{{url_for('display_image',filename='input1'+time+'.jpg')}}" class="image">
+{% if final_ans != "no_tumor" %}
+<img src="{{url_for('display_image',filename='show1'+time+'.jpg')}}" class="image">
+<img src="{{url_for('display_image',filename='imposed'+time+'.jpg')}}" class="image">
+{% endif %}
+        </div>
+<br>
+<form action="/",method="GET">
+    <input type="submit" value="Try with new image" class="trybutton">
+</form>
+</div>
+</body>
+</html>

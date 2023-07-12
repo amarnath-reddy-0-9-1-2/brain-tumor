@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MRI</title>
+    <link rel= "stylesheet" type= "text/css" href="static/styles/home.css">
+    <script>
+      window.onload = (function () {
+      const actualBtn = document.getElementById('actual-btn');
+      const fileChosen = document.getElementById('file-chosen');
+      actualBtn.addEventListener('change', function(){
+      fileChosen.textContent = this.files[0].name
+    });
+    });
+    </script>
+</head>
+<body class="container">
+<div class="Box">
+<h3 class="heading">UPLOAD AN IMAGE</h3>
+<form action="/" method=post enctype=multipart/form-data>
+    <input type="file" name = "file" id="actual-btn" hidden/>
+    <label for="actual-btn">Choose File</label>
+    <br>
+    <div id="file-chosen" class='filename'>No file chosen</div>
+    <input type="submit" value="Upload" id="upload" class="submit"/>
+</form>
+</div>
+</body>
+</html>

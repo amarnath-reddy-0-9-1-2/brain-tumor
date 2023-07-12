@@ -1,0 +1,53 @@
+.Box {
+    height: 200px;
+    width: 300px;
+    margin-top: 400px;
+    margin-left: 600px;
+    background-color: lightblue;
+    border-radius: 10px;
+    border-width: 5px;
+    box-shadow: 8px 6px darkblue;
+}
+
+label {
+    background-color: indigo;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+
+  .filename{
+    margin: 0 auto;
+    max-width: 250px;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+.submit {
+    margin-left: 90px;
+    font-family: sans-serif;
+    padding: 5px;
+    width: 120px;
+    background-color: indigo;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.heading {
+margin-left: 65px;
+padding-top: 30px;
+margin-bottom: 20px;
+font: sans-serif;
+font-weight: 10px;
+}
+.container{
+  background-image: url("newbuilding.jpg");
+  background-size: 1600px 800px;
+  background-repeat: no-repeat;
+}
